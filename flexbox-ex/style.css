@@ -87,8 +87,12 @@ section{
     margin: auto;
 }
 
+section:nth-child(even){
+    background-color: #cecbcb;
+}
+
 section:nth-child(odd){
-    background-color: #333;
+    background-color: #525151;
 }
 
 h2{
@@ -132,4 +136,64 @@ h2{
 .about-description h3{
     font-size: 1.5rem;
     padding: 5px;
+}
+
+#services{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.service-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 250px;
+    background-color: white;
+    color: black;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.service-container .card-container:hover{
+    background-color: #5b5959;
+    color: rgba(255, 255, 255, 0.911);
+    box-shadow: 0 0 5px 5px rgb(202, 200, 200);
+    cursor: pointer;
+    transform: scale(1.01);
+}
+
+.service-icon{
+    font-size: 2rem;
+    margin: 5px 0px;
+}
+
+#contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-container{
+    display: flex;
+    
+}
+
+.contact-container .card-container:hover{
+    background-color: #5b5959;
+    color: rgba(255, 255, 255, 0.911);
+    box-shadow: 0 0 5px 5px rgba(130, 128, 128, 0.717);
+    cursor: pointer;
+    transform: scale(1.01);
 }
