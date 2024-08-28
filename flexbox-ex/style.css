@@ -197,3 +197,12 @@ h2{
     cursor: pointer;
     transform: scale(1.01);
 }
+
+#footer{
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #525151;
+    color: #cecbcb;
+}
