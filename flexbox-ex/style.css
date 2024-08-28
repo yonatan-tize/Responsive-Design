@@ -63,7 +63,7 @@
     font-size: 6rem;
     color: #d1cacab4;
 }
-header h3{
+#header h3{
     font-size: 2rem;
     color: #1d1c1cb4;
 }
@@ -83,7 +83,7 @@ header h3{
 
 section{
     height: 100vh;
-    width: 100%;
+    /* width: 100%; */
     margin: auto;
 }
 
@@ -95,9 +95,9 @@ section:nth-child(odd){
     background-color: #525151;
 }
 
-h2{
+#about h2{
     font-size: 5rem;
-    margin-bottom: 4rem;
+    margin-bottom: 1rem;
 }
 
 #about{
@@ -108,13 +108,14 @@ h2{
 }
 
 .about-container{
-    width: 1200px;
     display: flex;
+    justify-content: center;
+    margin: 3rem;
 }
 .about-img{
-    min-width: 500px;
+    min-width: 400px;
     min-height: 200px;
-    background-image: url("https://images.unsplash.com/photo-1520702536908-ebc4a4e92893?q=80&w=2033&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-image: url("https://images.unsplash.com/photo-1529020390200-7d0411e6f63d?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -144,6 +145,10 @@ h2{
     justify-content: center;
     align-items: center;
     color: white;
+}
+#services h2{
+    font-size: 5rem;
+    margin-bottom: 4rem;
 }
 .service-container{
     display: flex;
@@ -184,9 +189,13 @@ h2{
     justify-content: center;
     align-items: center;
 }
-
+#contact h2{
+    font-size: 5rem;
+    margin-bottom: 4rem;
+}
 .contact-container{
     display: flex;
+    flex-wrap: wrap;
     
 }
 
@@ -205,4 +214,72 @@ h2{
     justify-content: center;
     background-color: #525151;
     color: #cecbcb;
+}
+
+@media(max-width:900px){
+    #header h1{
+        font-size: 4rem;
+    }
+    #about h2{
+        font-size: 3rem;
+    }
+    .about-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .about-img{
+        min-height: 250px;
+    }
+    .about-description{
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    #services h2{
+        font-size: 3rem;
+        margin-bottom: 2rem;
+    }
+    #contact h2{
+        font-size: 3rem;
+        margin-bottom: 2rem;
+    }
+}
+@media(max-width:400px){
+    #header h1{
+        font-size: 2rem;
+        color: #333;
+    }
+    #header h3{
+        font-size: 1.5rem;
+        color: #333;
+    }
+    h2{
+        font-size: 1.5rem;
+    }
+    .about-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 900px;
+    }
+    .about-img{
+        min-height: 150px;
+        min-width: 300px;
+    }
+    .about-description{
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    } 
+    .contact-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
