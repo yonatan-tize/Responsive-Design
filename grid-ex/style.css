@@ -39,5 +39,90 @@ body{
     padding: 10px;
     font-family:'Times New Roman', Times, serif ;
     color: rgb(0, 0, 0, 0.7);
-
 }
+.card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute; /* Ensure the image covers the entire card container */
+    top: 0;
+    left: 0;
+}
+
+section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.div1{
+    grid-column: span 2;
+}
+
+.div2{
+    grid-column: span 4;
+}
+
+.div3{
+    grid-column: span 3;
+}
+
+.div4{
+    grid-column: 3/ span 2;
+    grid-row: 1/span 3;
+}
+.div6{
+    grid-column: span 4;
+    /* grid-row: 1/span 3; */
+}
+
+.card-container {
+    /* position: relative; */
+    min-width: 200px;
+    /* height: 100%; Adjust height based on your preference */
+    max-height: 900px;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden; /*Ensure that the content doesn't overflow the container */
+    background-color: #fff; /* Optional: add a background color */
+    /* border: 1px solid #ddd; Optional: add a border */
+}
+
+.card-container h3, .card-container h5 {
+    z-index: 1; /* Ensure text appears on top of the image */
+    color: #2e2d2d; /* White text to contrast with the image */
+    text-align: center;
+    padding: 0.5rem;
+    background: rgba(255, 253, 253, 0.6); /* Optional: add a semi-transparent background */
+    width: 100%;
+    margin: 0;
+}
+
+.card-title {
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    padding: 0.4rem 0;
+  }
+  .card-title strong {
+    font-size: 1.7rem;
+    font-weight: 600;
+  }
+  
+  .card-title strong:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  .card-subtitle {
+    padding: 0.3rem 0;
+    text-transform: uppercase;
+  }
+  .card-subtitle a {
+    color: #777;
+    font-weight: 400;
+    letter-spacing: 1px;
+  }
+  .card-subtitle a:hover {
+    color: #222;
+  }
