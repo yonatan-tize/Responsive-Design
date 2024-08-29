@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+     max-width: 900px;
+     margin: auto;
+}
+#header{
+    border-bottom: 1px solid gray;
+}
+.navigation{
+    display: flex;
+    height: 10vh;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+}
+.navigation .nav-logo{
+    background-color: rgb(59, 96, 216);
+    height: 60px;
+    width: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    color: rgb(227, 225, 225);
+}
+.navigation ul{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+.navigation ul li a{
+    padding: 10px;
+    font-family:'Times New Roman', Times, serif ;
+    color: rgb(0, 0, 0, 0.7);
+
+}
